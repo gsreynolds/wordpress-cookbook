@@ -16,13 +16,13 @@ end
 depends "apache2", ">= 2.0.0"
 depends "database", ">= 1.6.0"
 depends "mysql", ">= 6.0"
-depends "mysql2_chef_gem", "~> 1.0.1"
+depends "mysql2_chef_gem" #, "~> 1.0.1"
 depends "build-essential"
-depends "iis", ">= 1.6.2"
-depends "tar", ">= 0.3.1"
-depends "nginx", "~> 2.7.4"
-depends "php-fpm", "~> 0.6.10"
-depends 'selinux', '~> 0.7'
+depends "iis" #, ">= 1.6.2"
+depends "tar" #, ">= 0.3.1"
+depends "nginx" #, "~> 2.7.4"
+depends "php-fpm" #, "~> 0.6.10"
+depends 'selinux' #, '~> 0.7'
 
 %w{ debian ubuntu windows centos redhat scientific oracle }.each do |os|
   supports os
